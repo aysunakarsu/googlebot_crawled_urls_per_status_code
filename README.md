@@ -1,5 +1,5 @@
 # googlebot_crawled_urls_per_status_code
-Below is the format of the logs which is used for the shell scripts for analyzing web server logs 
+Below is the format of the logs which bash shell scripts analyze web server logs 
 
 66.249.75.127 - - [01/Aug/2016:17:43:15 -0400] "GET /contact/ HTTP/1.1" 200 2630 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 

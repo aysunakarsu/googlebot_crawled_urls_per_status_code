@@ -3,7 +3,7 @@ Below is the format of the logs which bash shell scripts analyze web server logs
 
 66.249.75.127 - - [01/Aug/2016:17:43:15 -0400] "GET /contact/ HTTP/1.1" 200 2630 "-" "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 
-The commands which are used to parse and extract data from the web server log files and the graph obtained by using that input at the end are as follows:
+The commands which are used to parse and extract data from the web server log files and the graph obtained by using that input finally are as follows:
 
 1) Preparing the input file for the graph, at command line which will create file; googlebotcrawl 
 

@@ -1,0 +1,2 @@
+#!/bin/bash
+grep Googlebot *.log |cut  -d' '  -f4,7,9 |sed  's/\[//g'|cut -c1-11,21- | sort -u | cut -d' ' -f1,3 | sort | uniq -c |sed 's/\//-/g' |awk '{print $2" "$3" "$1}'|awk '{my_dict[$1][$2] = $3} END { for (key in my_dict) { print key" "my_dict[key][200]" "my_dict[key][301]" "my_dict[key][302]" "my_dict[key][404] } }' | awk  '{for(i=1; i<=5; i++) if(length($i)==0) $i=0; print }'|sort -t$'-' -k 2M -k1 >googlebotcrawl 
